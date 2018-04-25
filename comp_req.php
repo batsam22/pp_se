@@ -115,6 +115,7 @@ $query = "INSERT INTO consent_rec(slno,doc,org,orgc,nsc,now,gender,branch,skill,
  $resul = mysqli_query($db,$query)or die("error<br>".mysqli_error($dbc));
 
 echo "<script>alert('Succesfully Saved');window.location.assign('admin_home.php');</script>";
+}
 ?>
 
 
@@ -225,6 +226,8 @@ echo "<script>alert('Succesfully Saved');window.location.assign('admin_home.php'
         <label>Sl.No.</label>
         <input type="text" id="slno" class="form-control" name="slno">
       </div>
+      </div>
+      </div>
 
 <div class="container">
     <div class="row">
@@ -233,14 +236,18 @@ echo "<script>alert('Succesfully Saved');window.location.assign('admin_home.php'
 <label>Date of Consent: <span class="text-danger">*</span></label>
         <input type="text" id="doc" class="form-control" name="doc" required>
       </div>
+      </div>
+      </div>
       <div class="container">
-<div class="row">
-
+        <div class="row">
+          <div class="form-group ">
 
         <label>Organisation: <span class="text-danger">*</span></label>
         <input type="text" id="org" class="form-control" name="org" required>
       </div>
-<div class="row">
+      </div>
+      </div>
+
     <div class="container">
     <div class="row">
 
@@ -248,6 +255,9 @@ echo "<script>alert('Succesfully Saved');window.location.assign('admin_home.php'
 <label>4 Digit Organisation Code: <span class="text-danger">*</span></label>
         <input type="text" id="orgc" class="form-control" name="orgc" required>
       </div>
+      </div>
+      </div>
+
 
       <div class="container">
 <div class="row">
@@ -255,13 +265,19 @@ echo "<script>alert('Succesfully Saved');window.location.assign('admin_home.php'
         <label>No. of Students Consented: <span class="text-danger">*</span></label>
         <input type="number" id="nsc" class="form-control" name="nsc" required>
       </div>
-    <div class="container">
+      </div>
+      </div>
 
-<div class="form-group "><div class="row">
+    <div class="container">
+<div class="row">
+<div class="form-group ">
         <label>Nature of Work: <span class="text-danger">*</span></label>
         <input type="text" id="now" class="form-control" name="now" required>
       </div>
- <div class="row"> <div class="container">
+      </div>
+      </div>
+
+  <div class="container">
 <div class="row">
 <div class="form-group ">
         <label>Gender: <span class="text-danger">*</span></label>
@@ -269,151 +285,222 @@ echo "<script>alert('Succesfully Saved');window.location.assign('admin_home.php'
 <input type="radio" name="gender"  required value="Female"/>Female
 <input type="radio" name="gender"  required value="Male and Female"/>Both Male and Female
       </div>
+      </div>
+      </div>
 <div class="container">
 <div class="row">
 <div class="form-group ">
         <label>Branch: <span class="text-danger">*</span></label>
         <input type="text" id="branch" class="form-control" name="branch" placeholder="Ex: CSE">
       </div>
+      </div>
+      </div>
 
 <div class="container">
+  <div class="row">
 <div class="form-group">
-<div class="row">
         <label> Skill (Seperate Using comma(,)):</label><label> <span class="text-danger">*</span></label>
         <input type="text" id="skill" class="form-control" name="skill" placeholder="Seperate Using comma(,)" required>
       </div>
-        <div class="row">
+      </div>
+      </div>
+
         <div class="container">
 <div class="row">
+  <div class="form-group">
         <label>Specific Discipline & Dresscode: <span class="text-danger">*</span></label>
         <input type="text" id="dress_code" class="form-control" name="dress_code" required>
       </div>
+      </div>
+      </div>
 
-       <div class="row">
+      <div class="container">
+<div class="row">
+<div class="form-group">
 
         <label>Safety:</label>
         <input type="text" id="safety" class="form-control" name="safety">
       </div>
+      </div>
+      </div>
 
+<div class="container">
 <div class="row">
 <div class="form-group ">
         <label>Insurance:</label>
         <input type="text" id="insurance" class="form-control" name="insurance">
       </div>
-      <div class="container">
-<div class="row">
+      </div>
+      </div>
 
+      <div class="container">
+        <div class="row">
+      <div class="form-group ">
         <label>Others:</label>
         <input type="text" id="others" class="form-control" name="others">
       </div>
-<div class="row">
+      </div>
+      </div>
+
 <div class="container">
 <div class="row">
 <div class="form-group ">
         <label for="address">Address:<span class="text-danger">*</span></label>
         <textarea class="form-control" rows="2" id="address" name="address" required></textarea>
       </div>
+      </div>
+      </div>
+
       <div class="container">
 <div class="row">
 <div class="form-group ">
         <label>Website:</label>
         <input type="text" id="website" class="form-control" name="website">
       </div>
-     <div class="container">
-<div class="row">
+      </div>
+      </div>
 
+     <div class="container">
+       <div class="row">
+        <div class="form-group ">
         <label>Brief Description:<span class="text-danger">*</span></label>
         <input type="text" id="bd" class="form-control" name="bd" required>
       </div>
-<div class="row">
+      </div>
+      </div>
+
  <div class="container">
 <div class="row">
 <div class="form-group ">
         <label>Consent Given by:<span class="text-danger">*</span></label>
         <input type="text" id="cgb" class="form-control" name="cgb" required>
       </div>
+      </div>
+      </div>
+
 <div class="container">
 <div class="row">
 <div class="form-group ">
         <label>Email-ID: <span class="text-danger">*</span></label>
         <input type="email" id="email_id" class="form-control" name="email_id" required>
 </div>
+</div>
+</div>
+
 <div class="container">
 <div class="row">
 <div class="form-group ">
         <label>Ph.No.<span class="text-danger">*</span></label>
         <input type="text" id="phno" class="form-control" name="phno" required>
       </div>
+      </div>
+      </div>
+
 <div class="container">
 <div class="row">
 <div class="form-group ">
         <label>Single Point of Contact (SPOC):</label>
         <input type="text" id="spoc" class="form-control" name="spoc">
       </div>
+      </div>
+      </div>
+
 <div class="container">
 <div class="row">
 <div class="form-group ">
         <label>SPOC Email ID:</label>
         <input type="email" id="spoc_e" class="form-control" name="spoc_e">
       </div>
+      </div>
+      </div>
+
 <div class="container">
 <div class="row">
 <div class="form-group ">
         <label>SPOC Ph.No.</label>
         <input type="text" id="spoc_ph" class="form-control" name="spoc_ph">
       </div>
+      </div>
+      </div>
+
 <div class="container">
 <div class="row">
 <div class="form-group ">
         <label>Consent Obtained by/ Organisation Visited by:<span class="text-danger">*</span></label>
         <input type="text" id="ovb" class="form-control" name="ovb" required>
       </div>
+      </div>
+      </div>
+
 <div class="container">
 <div class="row">
 <div class="form-group ">
         <label>No. of students to be alotted(maximum of):<span class="text-danger">*</span></label>
         <input type="number" id="max_stu" class="form-control" name="max_stu" required>
       </div>
+      </div>
+      </div>
+
 <div class="container">
 <div class="row">
 <div class="form-group ">
         <label>Remoteness of Location:<span class="text-danger">*</span></label>
         <input type="text" id="rol" class="form-control" name="rol" required>
       </div>
+      </div>
+      </div>
+
 <div class="container">
 <div class="row">
 <div class="form-group ">
         <label>Other Observations:<span class="text-danger">*</span></label>
         <input type="text" id="oob" class="form-control" name="oob" required>
       </div>
+      </div>
+      </div>
+
 <div class="container">
 <div class="row">
 <div class="form-group ">
         <label>Information Details:</label>
         <input type="text" id="info_dtl" class="form-control" name="info_dtl">
       </div>
+      </div>
+      </div>
+
 <div class="container">
 <div class="row">
 <div class="form-group ">
         <label>Date on which the details to be communicated:</label>
         <input type="text" id="dtl_comm" class="form-control" name="dtl_comm">
       </div>
+      </div>
+      </div>
+
 <div class="container">
 <div class="row">
 <div class="form-group ">
         <label>by (Person):</label>
         <input type="text" id="by_per" class="form-control" name="by_per">
       </div>
+      </div>
+      </div>
+
 <div class="container">
 <div class="row">
 <div class="form-group ">
         <label>Date communicated:</label>
         <input type="text" id="dc" class="form-control" name="dc">
       </div>
+      </div>
+      </div>
+
 <div class="container">
 <div class="row">
     <div class="form-group">
         <input type="submit" name="submit" value="Save Details">
+      </div>
+      </div>
       </div>
     </form>
   </div>
