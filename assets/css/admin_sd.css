@@ -1,0 +1,17 @@
+body{
+}
+
+img.logo{
+  width: 40%;
+}
+
+nav{
+  background-color: #283955;
+}
+footer{
+  background-color: #283955;
+}
+
+#display1{
+  height: 800px;;
+}
